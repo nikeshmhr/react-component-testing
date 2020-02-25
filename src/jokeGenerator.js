@@ -25,7 +25,7 @@ export default class JokeGenerator extends React.Component {
 		const { joke, loading } = this.state;
 
 		return (
-			<React.Fragment>
+			<>
 				{!joke && !loading && (
 					<div>You haven't loaded any joke yet!</div>
 				)}
@@ -35,7 +35,7 @@ export default class JokeGenerator extends React.Component {
 				<button onClick={this.loadJoke} type="button">
 					Load a random joke
 				</button>
-			</React.Fragment>
+			</>
 		);
 	}
 }
